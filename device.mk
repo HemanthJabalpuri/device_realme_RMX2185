@@ -152,6 +152,11 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
+	
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    messaging
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
