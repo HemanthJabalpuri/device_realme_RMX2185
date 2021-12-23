@@ -1,8 +1,3 @@
-# Blurs
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.surface_flinger.supports_background_blur=1
-    ro.sf.blurs_are_expensive=1 \
-    persist.sys.sf.disable_blurs=1
 
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -12,7 +7,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Dex2oat
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.image-dex2oat-filter=quicken \
     dalvik.vm.image-dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
     dalvik.vm.dex2oat-filter=quicken \
@@ -21,23 +15,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
-# Iorap
-PRODUCT_PROPERTY_OVERRIDES += \
-   iorapd.perfetto.enable=true \
-   iorapd.readahead.enable=true
-
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=320
-	
-# Hardware Acceleration
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    video.accelerate.hw=1 \
-    debug.sf.hw=1 \
-    debug.performance.tuning=1 \
-    debug.egl.profiler=1 \
-    debug.egl.hw=1 \
-    debug.composition.type=gpu
 
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
