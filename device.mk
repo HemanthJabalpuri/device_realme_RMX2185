@@ -31,8 +31,7 @@ PRODUCT_PACKAGES += \
     RealmeParts
 
 # Realme Dirac
-PRODUCT_PACKAGES += \
-    RealmeDirac
+$(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
