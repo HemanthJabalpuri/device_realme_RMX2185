@@ -1,4 +1,7 @@
 
+# Bootanimation
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.nocheckin=1
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.pixelexperience.faceunlock \
