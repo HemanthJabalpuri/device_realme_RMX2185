@@ -42,8 +42,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Surfaceflinger
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
-    ro.surface_flinger.has_HDR_display=true \
-    ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.running_without_sync_framework=true \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
@@ -67,6 +65,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
     ro.config.sdha_apps_bg_min=8
+
+# GBoard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
